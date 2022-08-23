@@ -25,38 +25,72 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="d-flex justify-content-center my-4">
-      <div class="rounded-circle img1-box mx-5">
+    <header class="d-flex">
+      <nav>
+        <ul>
+          <li>Neo-New</li>
+          <li>Gallary</li>
+          <li>About Me</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="logo rounded-circle img1-box mx-3">
         <img
-          src="./Assests/img/img1.png"
+          src="./Assests/img/img4.png"
           alt="Grace Harris orignial painting"
-          width="100"
-          height="100"
+          width="90"
+          height="90"
         />
       </div>
-
-      <h1 class="logo-title-h1 mx-5">M.P.</h1>
+      <h1 class="header-title">Modern Picasso</h1>
     </header>
 
-    <!-- body container -->
-    <div class="container">
-      <!-- section 1 -->
-      <!-- Hero -->
-      <section class="section-space hero-section row">
+    <!-- section 1 -->
+    <!-- Hero -->
+    <section class="hero-section row">
+      <!-- the face trio -->
+      <div class="abstract-face-trio d-flex">
+        <div class="rounded-circle img1-box mx-3">
+          <img
+            src="./Assests/img/img2.png"
+            alt="Grace Harris orignial painting"
+            width="70"
+            height="70"
+          />
+        </div>
+        <div class="rounded-circle img1-box mx-3">
+          <img
+            src="./Assests/img/img3.png"
+            alt="Grace Harris orignial painting"
+            width="90"
+            height="90"
+          />
+        </div>
+        <div class="rounded-circle img1-box mx-3">
+          <img
+            src="./Assests/img/img1.png"
+            alt="Grace Harris orignial painting"
+            width="70"
+            height="70"
+          />
+        </div>
+      </div>
+      <!-- hero-message -->
+      <div class="hero-section-message-box row">
         <!-- color wheel -->
-        <div class="wheel-circle-box rounded-circle">
+        <div class="wheel-circle-box rounded-circle row flex-column">
           <div class="col rounded-circle color-wheel">
             <div class="color-wheel-brush">🖌️</div>
           </div>
         </div>
-        <!-- hero-message -->
-        <div class="hero-section-message-box row">
-          <h1 class="hero-h1 display-4 text-center">It's time we chat.</h1>
-          <p class="lead text-end mb-5">-Modern Picasso 🎨</p>
-          <a class="hero-contact-link p-2" href="#contact">Contact</a>
-        </div>
-      </section>
 
+        <h1 class="hero-h1 display-4 text-center">It's time we chat...</h1>
+        <p class="lead text-end mt-5 mb-5">-Modern Picasso 🎨</p>
+        <a class="hero-contact-link p-2" href="#contact">Chat</a>
+      </div>
+    </section>
+    <!-- body container -->
+    <div class="container">
       <!-- section 2 -->
       <!-- Neo-Expressionism -->
       <section class="columns card neo-express-section">
