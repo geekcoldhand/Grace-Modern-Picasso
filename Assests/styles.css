@@ -12,11 +12,21 @@
   --color4c: #b9b731;
   --color7c: #436076;
 }
+body {
+  background-color: #a0dde0;
+  color: var(--color7c);
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
 
-.logo-title-h1 {
+.header-title {
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 .img1-box {
   width: fit-content;
@@ -31,11 +41,13 @@ header {
   color: var(--color7c);
   padding-block: 1%;
   width: 100%;
-  justify-content: space-around;
   align-items: center;
 }
 nav ul li {
   font-size: 1.4rem;
+}
+nav ul {
+  list-style: none;
 }
 nav {
   padding-inline: 3%;
@@ -49,17 +61,6 @@ nav {
 }
 .abstract-face-trio {
   justify-content: space-around;
-}
-
-.header-title {
-  text-align: end;
-  padding: 1%;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-body {
-  color: var(--color7c);
-  font-family: "Alumni Sans Pinstripe", sans-serif;
 }
 
 .section-space {
@@ -86,14 +87,13 @@ body {
   border-radius: 1.25rem;
   align-content: space-around;
   justify-content: center;
+  flex-direction: column;
+  align-self: center;
 }
 .hero-contact-link {
-  font-size: 2rem;
-  background: var(--color5);
   border-radius: 1rem;
-  font-style: normal;
   color: var(--color7c);
-  width: fit-content;
+  height: fit-content;
   text-decoration: none;
 }
 .hero-h1 {
@@ -102,6 +102,10 @@ body {
   text-align: center;
   align-self: center;
   justify-self: center;
+}
+.hero-text {
+  flex-direction: column;
+  align-items: center;
 }
 .wheel-circle-box {
   width: 20rem;
@@ -128,10 +132,14 @@ body {
   position: absolute;
   margin-block: auto;
   content: "🖌️";
-  top: 36%;
-  left: 38%;
+  top: 38%;
+  left: 39%;
   font-size: 4rem;
   transform: translate(-50%, -50%);
+}
+.lead {
+  font-weight: 900;
+  font-size: 1.6rem;
 }
 
 @keyframes clockwise {
@@ -163,8 +171,30 @@ body {
   }
 }
 
+.whatIsFigure {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.whatIsFigure img {
+  width: 100%;
+  background-size: cover;
+  filter: blur(3px);
+  opacity: 65%;
+}
+
+.centerImgageText {
+  position: absolute;
+  font-size: 7em;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  color: var(--color3);
+  transform: translate(-50%, -50%);
+}
+
 @media (min-width: 768px) {
-  .hero-section {
+  .hero-section-message-box {
     flex-direction: row;
   }
 
