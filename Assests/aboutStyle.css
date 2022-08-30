@@ -1,0 +1,122 @@
+:root {
+  /* bright colors */
+  --color1: #f886a8;
+  --color2: #feaa92;
+  --color3: #a07364;
+  --color4: #dfdd6c;
+  --color5: #61b2b6;
+  --color6: #9adbc5;
+  /* contrast colors */
+  --color2c: #924f3d;
+  --color3c: #4f3f37;
+  --color4c: #b9b731;
+  --color7c: #699dcb;
+}
+body {
+  background-color: var(--color3c);
+  color: var(--color1);
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+p {
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--color1);
+}
+
+.page-padding {
+  margin-block: 20%;
+  padding-block: 4%;
+}
+header {
+  background-color: var(--color7c);
+  color: var(--color3c);
+  padding-block: 1%;
+  width: 100%;
+  align-items: center;
+}
+
+.header-logo {
+  align-self: center;
+  justify-self: end;
+}
+
+header a {
+  color: var(--color3c);
+  font-size: 1.4rem;
+}
+header a:hover {
+  color: aliceblue;
+}
+.header-title {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.grace-about-img {
+  width: 25%;
+  box-shadow: 4px 1px 90px 1px var(--color2);
+}
+
+#grace-cellphone-number {
+  display: block;
+  cursor: pointer;
+}
+#hidden-number-behind {
+  cursor: pointer;
+}
+
+.wheel-circle-box {
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.color-wheel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/colorWheelSVG.svg");
+  background-repeat: no-repeat;
+  animation-name: clockwise;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-size: cover;
+}
+.color-wheel-brush {
+  animation: counter-clockwise 20s infinite linear;
+  position: absolute;
+  margin-block: auto;
+  content: "🖌️";
+  top: 38%;
+  left: 39%;
+  font-size: 1.4rem;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counter-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

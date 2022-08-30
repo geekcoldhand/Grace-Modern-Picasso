@@ -1,32 +1,47 @@
 :root {
   /* bright colors */
   --color1: #f886a8;
-  --color2: #fe8d6f;
-  --color3: #fdc453;
-  --color4: #dfdd6c;
-  --color5: #a0dde0;
+  --color2: #fea992ef;
+  --color3: #a07364;
+  --color4: #ffee8ce4;
+  --color5: #b6eff283;
   --color6: #9adbc5;
   /* contrast colors */
   --color2c: #924f3d;
-  --color3c: #cfa145;
+  --color3c: #4f3f37;
   --color4c: #b9b731;
-  --color7c: #436076;
+  --color7c: #699dcb;
 }
 body {
-  background-color: #a0dde0;
-  color: var(--color7c);
+  background-color: var(--color5);
   font-family: "Alumni Sans Pinstripe", sans-serif;
+  color: var(--color7c);
 }
 h2 {
   font-size: 2.3rem;
   font-weight: 400;
 }
+h3 {
+  font-size: 1.3rem;
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.page-padding {
+  margin-block: 20%;
+  padding-block: 4%;
+}
 
 .header-title {
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  width: 100%;
 }
 .img1-box {
   width: fit-content;
@@ -37,14 +52,24 @@ h2 {
 }
 
 header {
-  background-color: var(--color2);
+  background-color: var(--color4);
   color: var(--color7c);
   padding-block: 1%;
   width: 100%;
   align-items: center;
 }
+footer {
+  border-top: 0.2rem solid #4f3f37;
+}
 nav ul li {
   font-size: 1.4rem;
+}
+nav ul li a {
+  color: var(--color7c);
+}
+
+nav ul li a:hover {
+  color: aliceblue;
 }
 nav ul {
   list-style: none;
@@ -79,9 +104,10 @@ nav {
   padding-block: 3rem;
 }
 .hero-section-message-box {
-  background-color: #dedede81;
+  background-color: transparent;
+  color: aliceblue;
   padding: 3rem;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   height: fit-content;
   width: 95%;
   border-radius: 1.25rem;
@@ -97,6 +123,8 @@ nav {
   text-decoration: none;
 }
 .hero-h1 {
+  color: aliceblue;
+  font-family: "Barlow", sans-serif;
   font-size: 4.2rem;
   font-weight: 800;
   text-align: center;
@@ -108,8 +136,8 @@ nav {
   align-items: center;
 }
 .wheel-circle-box {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   padding: 1rem;
   align-self: center;
   justify-self: center;
@@ -175,6 +203,8 @@ nav {
   position: relative;
   text-align: center;
   width: 100%;
+  padding-top: 5vh;
+  margin-bottom: 10vh;
 }
 .whatIsFigure img {
   width: 100%;
@@ -183,14 +213,14 @@ nav {
   opacity: 65%;
 }
 
-.centerImgageText {
+.figureText {
   position: absolute;
-  font-size: 7em;
-  font-weight: 900;
   top: 50%;
   left: 50%;
-  color: var(--color3);
   transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: 900 italic;
+  color: var(--color4);
 }
 
 @media (min-width: 768px) {
